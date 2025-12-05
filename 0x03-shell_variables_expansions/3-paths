@@ -1,4 +1,5 @@
 #!/bin/bash
 IFS=:
-set $PATH
+set -f
+set -- $PATH
 echo $#
