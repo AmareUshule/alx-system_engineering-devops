@@ -1,2 +1,4 @@
 #!/bin/bash
-echo $PATH | awk -F: '{print NF}'
+IFS=:
+set $PATH
+echo $#
