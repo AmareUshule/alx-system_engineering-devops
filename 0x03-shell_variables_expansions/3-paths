@@ -1,5 +1,2 @@
 #!/bin/bash
-IFS=:
-set -f
-set -- $PATH
-echo $#
+echo $PATH | tr ':' '\n' | wc -l
